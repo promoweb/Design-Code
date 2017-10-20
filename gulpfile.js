@@ -10,8 +10,6 @@ var messages = {
 };
 
 
-
-
 /**
  * Build the Jekyll Site
  */
@@ -74,7 +72,6 @@ gulp.task('jade', function(){
   .pipe(gulp.dest('_includes'));
 });
 
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -86,8 +83,6 @@ gulp.task('watch', function () {
     gulp.watch(['assets/js/**'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
 });
-
-
 
 
 /**
